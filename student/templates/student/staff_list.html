@@ -1,0 +1,9 @@
+{% if staff %}
+{% for each in staff %}
+   <ol> {{each.username}}   {{each.email}}</ol>
+{% endfor %}
+{% else %}
+{% endif %}
+
+<a href="/student/students_list/">Back</a>
+<a href="/student/staff_logout/">Logout</a>
